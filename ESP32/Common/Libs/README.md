@@ -5,7 +5,7 @@
 > Dss(fn_callback) - Instanzia la classe e avvia il demone che si occupa di rimanere in attesa di dati da altri dispositivi
 > - fn_callback - (function) Funzione esterna che viene avviata quando viene ricevuto un messaggio completo
 
-`get_mac()` - Restituisce il Mac Address delle periferica in formato bytearray
+`get_mac()` - (bytearray) Restituisce il Mac Address delle periferica in formato bytearray
 
 `print_mac()` - Stampa a video il Mac Address in formato user friendly
 
@@ -32,12 +32,12 @@ Immagazzina e gestisce i dati del dispositivo
   > read("Sensori\Temperatura\Value") restituisce un intero contenuto nella posizione richiesta<br />
   > read("Sensori\Temperatura") restituisce un dict del tipo {'Value': 10, 'Unita':"°C"}
 
-`write(path, value)` - (None) Scrive il dato nella posizione richiesta
+`write(path, value)` - Scrive il dato nella posizione richiesta
 - path - (string) Percorso del dato da leggere separato da \
 - value - (dict, string, int) Dato da inserire nel data storage
   > Esempi:<br />
   > write("Sensori\Temperatura\Value", 10) Scrive il valore intero nella specifica posizione<br />
   >  write("Sensori\Temperatura", {'Value': 10, 'Unita':"°C"}) Scrive il dato complesso nella specifica posizione
 
-`delete(path)` - (None) Elimina il dato presente nella posizione richiesta
+`delete(path)` - Elimina il dato presente nella posizione richiesta
 - path - (string) Percorso del dato da leggere separato da \
