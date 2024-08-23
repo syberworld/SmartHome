@@ -2,6 +2,8 @@
 
 ## Comunicazioni (Communicatons.py)
 ### WiFi - Gestione dell'interfaccia di rete
+Gestisce la scheda di rete, può essere utilizzata solo per attivare la WiFi, necessaria per esempio per le comunicazioni via EspNow, o per connettersi ad una rete WiFi. In caso di connessione alla rete fornisce l'indirizzo IP assegnato e gli altri parametri, per far coesistere la connessione WiFi con l'utilizzo di EspNow l'interfaccia lavora sul canale 6  
+
 > WiFi(proxy=False) - Instanzia la classe e connette il dispositivo alla rete
 > - proxy - (boolean) - True si connette alla rete locale WiFi (modalità Proxy), False non si connette e attiva l'interfaccia di rete (modalità Client)
 
