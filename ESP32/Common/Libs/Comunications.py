@@ -8,7 +8,7 @@ class Wifi():
     def __init__(self, proxy=False):
         self.sta, ap = self._wifi_reset()
         if proxy:
-            self.sta.connect('iliadbox-60ADCB', 'LiNkWiFi.01')
+            self.sta.connect('ssid', 'password')
             while not self.sta.isconnected():
                 time.sleep(0.1)
             self.sta.config(pm=self.sta.PM_NONE)
