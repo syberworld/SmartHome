@@ -1,7 +1,7 @@
 # Librerie
 
-## Communicatons
-### Dss - Funzioni di basso livello per le comunicazioni con protocollo EspNow
+## Comunicazioni (Communicatons.py)
+### DSS (Data Sender System) - Funzioni di basso livello per le comunicazioni con protocollo EspNow
 > Dss(fn_callback) - Instanzia la classe e avvia il demone che si occupa di rimanere in attesa di dati da altri dispositivi
 > - fn_callback - (function) Funzione esterna che viene avviata quando viene ricevuto un messaggio completo
 
