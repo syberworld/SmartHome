@@ -27,17 +27,17 @@ Immagazzina e gestisce i dati del dispositivo
 `store` - (dict) Contiene i dati del dispositivo
 
 `read(path)` - (dict, int, str) Legge il dato contenuto, anche nidificato, nella posizione richiesta
-- path - (string) Percorso del dato da leggere separato da \
+- path - (string) Percorso del dato da leggere separato da .
   > Esempi:<br />
   > read("Sensori\Temperatura\Value") restituisce un intero contenuto nella posizione richiesta<br />
   > read("Sensori\Temperatura") restituisce un dict del tipo {'Value': 10, 'Unita':"°C"}
 
 `write(path, value)` - Scrive il dato nella posizione richiesta
-- path - (string) Percorso del dato da leggere separato da \
+- path - (string) Percorso del dato da leggere separato da .
 - value - (dict, string, int) Dato da inserire nel data storage
   > Esempi:<br />
   > write("Sensori\Temperatura\Value", 10) Scrive il valore intero nella specifica posizione<br />
   >  write("Sensori\Temperatura", {'Value': 10, 'Unita':"°C"}) Scrive il dato complesso nella specifica posizione
 
 `delete(path)` - Elimina il dato presente nella posizione richiesta
-- path - (string) Percorso del dato da leggere separato da \
+- path - (string) Percorso del dato da leggere separato da .
