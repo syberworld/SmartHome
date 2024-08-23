@@ -1,13 +1,17 @@
 # Librerie
 
 ## Comunicazioni (Communicatons.py)
-### DSS (Data Sender System) - Funzioni di basso livello per le comunicazioni con protocollo EspNow
-> Dss(fn_callback) - Instanzia la classe e avvia il demone che si occupa di rimanere in attesa di dati da altri dispositivi
-> - fn_callback - (function) Funzione esterna che viene avviata quando viene ricevuto un messaggio completo
+### WiFi - Gestione dell'interfaccia di rete
+> WiFi(proxy=False) - Instanzia la classe e connette il dispositivo alla rete
+> - proxy - (boolean) - True si connette alla rete locale WiFi (modalità Proxy), False non si connette e attiva l'interfaccia di rete (modalità Client)
 
 `get_mac()` - (bytearray) Restituisce il Mac Address delle periferica in formato bytearray
 
 `print_mac()` - Stampa a video il Mac Address in formato user friendly
+
+### DSS (Data Sender System) - Funzioni di basso livello per le comunicazioni con protocollo EspNow
+> Dss(fn_callback) - Instanzia la classe e avvia il demone che si occupa di rimanere in attesa di dati da altri dispositivi
+> - fn_callback - (function) Funzione esterna che viene avviata quando viene ricevuto un messaggio completo
 
 `send_message(peer, message)` - Invia ad un altro dispositivo il messaggio
 - peer - (bytearray) Mac Adress del destinatario
